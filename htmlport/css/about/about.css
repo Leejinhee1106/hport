@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* 카카오 큰글씨 */
+@font-face {
+  font-family: "KakaoBigSans-ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-ExtraBold.woff2") format("woff2");
+  font-style: normal;
+}
+/* - ▼ Class ----------------------------------------------------------- */
+.kakao-b {
+  font-family: "KakaoBigSans-ExtraBold" !important;
+  font-weight: 800 !important;
+}
+
+.kakao-l {
+  font-family: "KakaoBigSans-Regular" !important;
+  font-weight: 400 !important;
+}
+
+.arial {
+  font-family: "Arial" !important;
+  font-weight: normal !important;
+}
+
+.arial-b {
+  font-family: "Arial" !important;
+  font-weight: bold !important;
+}
+
+.arial-k {
+  font-family: "Arial black" !important;
+}
+
+html, html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li, ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* PC */
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo_bg {
+    width: 300px !important;
+    height: 300px !important;
+    background: url(../../img/about/logo-b-trans.svg) no-repeat !important;
+    background-size: contain !important;
+    position: absolute;
+    top: 20%;
+    transition: all 0.3s;
+  }
+  .items_wrap {
+    margin-left: 30% !important;
+    transition: all 0.3s;
+  }
+}
+/* 모바일 */
+@media (max-width: 767px) {
+  .logo_bg {
+    width: 85% !important;
+    height: 95% !important;
+    margin-left: 15%;
+    background: url(../../img/about/mobile_bg_b.png) no-repeat !important;
+    background-size: contain !important;
+    background-position: right bottom !important;
+  }
+  .items_wrap {
+    margin-left: 0 !important;
+    transition: all 0.3s;
+  }
+}
+/*
+body 너비는 1280px
+헤더 높이 100px
+푸터 400px
+배경색 f1f1f1
+행간 12pt -> line-height: 16px;
+자간 -20 -> letter-spacing: -1px;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 100px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body .about_wrap {
+  margin: 50px 20px 100px 20px;
+}
+body .about_wrap .slogan_img {
+  width: 100%;
+  padding-top: 48.7%;
+  background: url(../../img/about/every.jpg);
+  background-size: cover;
+  margin: 20px 0;
+}
+body .about_wrap .content {
+  margin-top: 20px;
+}
+body .about_wrap .sec2 {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+body .about_wrap .sec2 .history_box {
+  margin-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body .about_wrap .sec2 .history_box .logo_bg {
+  width: 500px;
+  height: 600px;
+  background: url(../../img/about/history_bg2.png) no-repeat;
+  background-size: contain;
+  background-position: 0 45px;
+  position: absolute;
+  left: 0;
+}
+body .about_wrap .sec2 .history_box .items_wrap {
+  position: relative;
+  margin-left: 50%;
+}
+body .about_wrap .sec2 .history_box .items_wrap .history-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+body .about_wrap .sec2 .history_box .items_wrap .history-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 81.5px;
+  width: 2px;
+  height: 100%;
+  background-color: #31ceee;
+}
+body .about_wrap .sec2 .history_box .items_wrap .history-item .year {
+  margin-right: 40px;
+}
+
+.title {
+  font-size: 46px;
+}
+
+.sub_title {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
+
+.year {
+  font-size: 24px;
+}
+
+.bold_c {
+  font-size: 18px;
+}
+
+.bold_t {
+  color: #31ceee;
+}
+
+mark {
+  background: #31ceee;
+  color: white;
+}
+
+/*수정된 사항
+antenna 섹션 1 
+타이틀 margin-top 50px
+이미지 기준으로 margin 상하 20px
+섹션 1 <-> 2 사이 간경 70px
+센션 2 margin-bottom 100px
+*//*# sourceMappingURL=about.css.map */

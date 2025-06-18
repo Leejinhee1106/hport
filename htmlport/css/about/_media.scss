@@ -1,0 +1,37 @@
+/* PC */
+@media (min-width: 1025px) {
+
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo_bg {
+        width: 300px !important;
+        height: 300px !important;
+        background: url(../../img/about/logo-b-trans.svg) no-repeat !important;
+        background-size: contain !important;
+        position: absolute;
+        top: 20%;
+        transition: all 0.3s;
+    }
+    .items_wrap{
+        margin-left: 30% !important;
+        transition: all 0.3s;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .logo_bg {
+        width: 85% !important;
+        height: 95% !important;
+        margin-left: 15%;
+        background: url(../../img/about/mobile_bg_b.png) no-repeat !important;
+        background-size: contain !important;
+        background-position: right bottom !important;
+    }
+    .items_wrap{
+        margin-left: 0 !important;
+        transition: all 0.3s;
+    }
+}

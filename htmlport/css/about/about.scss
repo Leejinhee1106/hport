@@ -1,0 +1,101 @@
+@import "../font";
+@import "../reset";
+@import "../about/media";
+/*
+body 너비는 1280px
+헤더 높이 100px
+푸터 400px
+배경색 f1f1f1
+행간 12pt -> line-height: 16px;
+자간 -20 -> letter-spacing: -1px;
+*/
+
+
+*{margin: 0; padding: 0;}
+body{
+  padding-top: 100px; //헤더자리 확보
+  max-width: 1280px;
+  margin: 0 auto;
+  .about_wrap{
+    margin: 50px 20px 100px 20px; //반응형때문에  좌우 margin줌
+    .slogan_img{
+      width: 100%;
+      padding-top: 48.7%;
+      // height: 623px;
+      background: url(../../img/about/every.jpg);
+      background-size: cover;
+      margin: 20px 0;
+    }
+    .content{margin-top: 20px;}
+
+    .sec2{
+      margin-top: 70px;
+      margin-bottom: 100px; 
+      .history_box{
+        margin-top: 20px;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        .logo_bg{
+          width: 500px;
+          height: 600px;
+          background: url(../../img/about/history_bg2.png) no-repeat;
+          background-size: contain;
+          background-position: 0 45px;
+          position: absolute;
+          left: 0;
+        }
+        .items_wrap{
+          position: relative;
+          margin-left: 50%;
+                
+          .history-item{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 50px;
+
+             &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 81.5px;
+              width: 2px;
+              height: 100%;
+              background-color: #31ceee;
+             }
+            .year{
+              margin-right: 40px;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+// 텍스트 css
+.title {font-size: 46px;}
+.sub_title {font-size: 36px; letter-spacing: -1px;}
+p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
+.year {font-size: 24px;}
+.bold_c {
+  font-size: 18px;
+}
+.bold_t {
+  // font-size: 26px;
+  color: #31ceee;
+}
+mark{background: #31ceee; color: white;}
+
+/*수정된 사항
+antenna 섹션 1 
+타이틀 margin-top 50px
+이미지 기준으로 margin 상하 20px
+섹션 1 <-> 2 사이 간경 70px
+센션 2 margin-bottom 100px
+*/
